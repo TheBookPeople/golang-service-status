@@ -39,9 +39,10 @@ they are included in 'errors' as well.
   "hostname": "clippy",
   "checks": [{
     "name": "redis",
-    "successful": true
     "description": "Can connect to Redis"
+    "successful": true
   }],
+  "errors": [],
   "timestamp": "2015-05-07 14:35:17",
   "uptime": "14d:23:11:21",
   "diskusage": "64%",
