@@ -1,4 +1,4 @@
-# Service::Status
+# golang-service-status
 
 Provides an JSON object exposing status information, ideal as part of a REST API for internal monitoring.
 
