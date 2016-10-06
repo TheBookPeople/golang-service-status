@@ -1,6 +1,6 @@
 # golang-service-status
 
-Provides an JSON object exposing status information, ideal as part of a REST API for internal monitoring.
+Provides a JSON object exposing status information, ideal as part of a REST API for internal monitoring.
 
 ## Installation
 
@@ -14,7 +14,7 @@ import servicestatus "github.com/TheBookPeople/golang-service-status"
 
 ```go
 // Initialize
-status = servicestatus.NewServiceStatus()
+status := servicestatus.NewServiceStatus("app name", "0.0.1")
 
 // Add service checks
 status.AddCheck("Redis Ping", func() bool {
@@ -23,7 +23,7 @@ status.AddCheck("Redis Ping", func() bool {
 })
 
 // Get a JSON string containing service info:
-status.Status("MyApp", "0.0.1")
+status.Status()
 ```
 ## Format
 
